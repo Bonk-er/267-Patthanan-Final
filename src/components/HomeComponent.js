@@ -114,8 +114,7 @@ class Home extends Component {
                                         <CardText>The US Justice Department will investigate the police response to the mass shooting at a school in Uvalde, Texas, which killed 19 children and two teachers.</CardText>
                                     </CardBody>
                                 </Card>
-                            </div>
-                            
+                            </div>                         
                         </div>
                     </div>
                 </div>

@@ -12,16 +12,15 @@ import {
 class Header extends Component {
     render() {
         return (
-            <div>
+            <div className="py-5">
                 <Navbar
-                    style={{ position: "sticky" }}
 
                     expand="sm"
                     fixed={'top'}
-                    className={'Navcolor position-sticky ps-0'}
+                    className={'NavColor'}
                     light
                 >
-                    <NavbarBrand href="/" classname="p-5" alt='Blue Square'><img src='assets/images/logo.jpg' className="react-logo" alt='Ristorante Con Fusion' /></NavbarBrand>
+                    <NavbarBrand href="/" classname="p-5" alt='Blue Square'><img src='assets/images/logo.jpg' className="react-logo" alt='Blue Square' /></NavbarBrand>
                     <NavbarToggler onClick={function noRefCheck() { }} />
                     <Collapse navbar>
                         <Nav
@@ -44,7 +43,7 @@ class Header extends Component {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/menu">
+                                <NavLink href="/gallery">
                                     Photo Gallery
                                 </NavLink>
                             </NavItem>

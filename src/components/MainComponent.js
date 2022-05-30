@@ -21,7 +21,7 @@ class Main extends Component {
             selectedPicture: null,
         };
     }
-    onDishSelect(picId) {
+    onPicSelect(picId) {
         this.setState({ selectedPicture: picId })
     }
 
@@ -31,16 +31,11 @@ class Main extends Component {
                 <Router>
                     <div>
                         <Header />
-                        <nav>
-                            <ul>
-                            </ul>
-                        </nav>
-
                         <Switch>
                             <Route path='/home' component={Home} />
                             <Route exact path='/about' component={About} />
-                            <Route exact path='/menu' component={() => <Gallery pics={this.state.pics}
-                                selectedPicture={this.state.selectedPicture} onClick={(picId) => this.onDishSelect(picId)} />} />
+                            <Route exact path='/gallery' component={() => <Gallery pics={this.state.pics}
+                                selectedPicture={this.state.selectedPicture} onClick={(picId) => this.onPicSelect(picId)} />} />
                             <Redirect to="/home" />
                         </Switch>
                         <Footer />

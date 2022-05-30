@@ -15,7 +15,8 @@
 }
 
 .NavColor {
-  background-color: #fff;
+  background-color: #fff !important;
+  background: #fff !important;
 }
 
 .NavColor-bottom {
